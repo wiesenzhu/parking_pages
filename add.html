@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<style type="text/css">
+			.box {
+				width: 80%;
+				height: 100%;
+				/*border: 1px solid red;*/
+				margin: 0 auto;
+				position: relative;
+			}
+			
+			input {
+				width: 80%;
+				height: 100px;
+				border: 1px solid black;
+				display: block;
+				margin: 10px auto;
+				font-size: 50px;
+				line-height: 100px;
+			}
+			
+			input::-webkit-input-placeholder {
+				/* placeholder颜色  */
+				color: #aab2bd;
+				/* placeholder字体大小  */
+				font-size: 50px;
+				/* placeholder位置  */
+				text-align: center;
+			}
+			
+			input[type=submit] {
+				background: #2cc17b !important;
+				border-radius: 20px;
+				display: block;
+				width: 80%;
+				height: 100px;
+				cursor: pointer;
+				text-align: center;
+				color: #fff;
+				background: #ddd;
+				font-size: 45px;
+				line-height: 100px;
+			}
+			
+			.backImg {
+				width: 80%;
+				height: 300px;
+				background: url(./img/backimg2.jpg);
+				background-size: 177px 238px;
+				margin: 150px auto 50px;
+				background-repeat: no-repeat;
+			}
+			
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+			
+			input[type=radio] {
+				background: #2cc17b !important;
+				border-radius: 20px;
+				display: block;
+				width: 80%;
+				height: 100px;
+				cursor: pointer;
+				text-align: center;
+				color: #fff;
+				background: #ddd;
+				font-size: 45px;
+				line-height: 100px;
+			}
+			span {
+				width: 200px;
+				height: 100px;
+				font-size: 60px;
+				line-height: 100px;
+				
+			}
+			span, ._input{
+				float: left;
+				
+			}
+			._line{
+				height: 120px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box">
+			<img src="./img/backimg2.jpg" width="720px" height="500px" />
+			<form action="/doLogin" method="post">
+				<div class="_line">
+					<span>车牌号: </span>
+					<input class="_input" style="width: 50%;" type="text" name="username" id="username" placeholder="请输入用户名" /><br />
+				</div>
+				<div class="_line">
+					<span>事由: </span>
+					<input type="password" name="password" id="password" placeholder="请输入密码" /><br />
+				</div>
+				<div class="_line">
+					<span>手机号: </span>
+					<input type="password" name="password" id="password" placeholder="请输入密码" /><br />
+				</div>
+				<div class="_line">
+					<span>类型</span>
+					<input type="radio" name="type" id="type" value="1" />进入
+					<input type="radio" name="type" id="type" value="0" />离开
+				</div>
+				<input type="submit" value="提交" />
+			</form>
+		</div>
+		<div class="footer">
+			兵哥出品, 必是精品
+		</div>
+	</body>
+
+</html>
